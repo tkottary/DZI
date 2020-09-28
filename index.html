@@ -1,1 +1,20 @@
 
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<title>Widefield deep mosaic of Cephues</title>
+</head>
+<body>
+<div id="openseadragon1" style="width: 2048px; height: 2048px;"></div>
+<script src="https://cdn.jsdelivr.net/npm/openseadragon@2.2/build/openseadragon/openseadragon.min.js"></script>
+<script type="text/javascript">
+    var viewer = OpenSeadragon({
+        id: "openseadragon1",
+        prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@2.2/build/openseadragon/images/",
+        tileSources: "images/cepheus-mosaic/dzi_output.xml"
+    });
+</script>
+</body>
+</html>
